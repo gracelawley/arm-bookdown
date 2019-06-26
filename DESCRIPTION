@@ -1,0 +1,6 @@
+Package: Test 
+Type: Book
+Title: Bookdown Test
+Version: 0.0.1
+Imports: bookdown, ggplot2
+Remotes: rstudio/bookdown
