@@ -8,3 +8,5 @@ apt_packages:
   - libudunits2-dev
   - gdal-bin
   - libproj-dev
+  - libgdal1-dev
+  - libgeos-dev
