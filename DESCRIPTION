@@ -7,6 +7,18 @@ Imports:
   ggplot2,
   tidycensus,
   dplyr,
-  units
+  httr,
+  sf,
+  tigris,
+  stringr,
+  jsonlite (>= 1.5.0),
+  purrr, 
+  rvest, 
+  tidyr (>= 0.7.0),
+  rappdirs, 
+  readr, 
+  xml2, 
+  units, 
+  utils
 Remotes: 
   rstudio/bookdown
