@@ -30,7 +30,7 @@ library(tidycensus)
 library(dplyr)
 
 us_county_income <- get_acs(geography = "county", variables = "B19013_001", 
-                            shift_geo = TRUE, geometry = TRUE)
+                            shift_geo = TRUE, geometry = TRUE, key = Sys.getenv("CENSUS_API_KEY"))
 
 us_county_income %>% 
   head()
