@@ -22,8 +22,7 @@ apt_packages:
   - gdal-bin
   - libgdal1-dev
   - libproj-dev
-
-
+  
 r_binary_packages:
   - rgdal
   

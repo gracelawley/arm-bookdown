@@ -1,8 +1,10 @@
 # (PART\*) Act One {-}
 
-# Introduction {#intro}
+# Introduction `testing` {#intro}
 
-*Trigger a new build*
+__TODO:__ make this into a personal cheatsheet bookdown to use as a quick reference when needed
+
+Testing cross referencing headers with backticks \@ref(intro)
 
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
