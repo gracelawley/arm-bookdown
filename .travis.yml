@@ -19,7 +19,7 @@ script:
 
 apt_packages:
   - libudunits2-dev
-  #- gdal-bin
+  - gdal-bin
   #- libgdal1-dev
   #- libproj-dev
   
