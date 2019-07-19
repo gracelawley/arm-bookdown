@@ -2,23 +2,34 @@ Package: test
 Type: Book
 Title: Bookdown Test
 Version: 0.0.1
-Imports: 
-  bookdown, 
-  ggplot2,
-  tidycensus,
-  dplyr,
-  httr,
-  sf,
-  tigris,
-  stringr,
-  jsonlite (>= 1.5.0),
-  purrr, 
-  rvest, 
-  tidyr (>= 0.7.0),
-  rappdirs, 
-  readr, 
-  xml2, 
-  units, 
-  utils
-Remotes: 
-  rstudio/bookdown
+Imports:
+    bookdown,
+    gapminder,
+    tidyverse,
+    fs (>= 1.2.7.9001),
+    testthat,
+    dichromat,
+    hexbin,
+    gridExtra,
+    xtable,
+    usethis (>= 1.4.0.9000),
+    devtools (>= 2.0.1.9000),
+    rmarkdown,
+    knitr,
+    git2r,
+    roxygen2 (>= 6.1.1.9000),
+    viridis,
+    RColorBrewer,
+    units,
+    rvest,
+    xml2,
+    httr,
+    rplos,
+    rebird,
+    geonames,
+    gender
+Remotes:  
+    r-lib/fs,
+    r-lib/usethis,
+    r-lib/devtools,
+    klutometis/roxygen
