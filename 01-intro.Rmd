@@ -1,42 +1,65 @@
 # (PART\*) Act One {-}
 
-# Introduction `testing` {#intro}
+# Font-Awesome Icons
 
-__TODO:__ make this into a personal cheatsheet bookdown to use as a quick reference when needed
+<i class="fab fa-creative-commons"></i>
 
-Testing cross referencing headers with backticks \@ref(intro)
+Trying to figure out how to add font-awesome icons
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+<span style="font-size: 3em; color: Tomato;">
+  <i class="fas fa-camera"></i>
+</span>
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
+# Citations {#citations}
+
+In `book.bib` file:
+
+
+```bibtex
+@Manual{R-base,
+  title = {R: A Language and Environment for Statistical
+    Computing},
+  author = {{R Core Team}},
+  organization = {R Foundation for Statistical Computing},
+  address = {Vienna, Austria},
+  year = {2016},
+  url = {https://www.R-project.org/},
+}
 ```
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+`@R-base` = @R-base
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
+`[@R-base]` = [@R-base]
+
+`[-@R-base]` = [-@R-base]
+
+`-@R-base` = -@R-base
+
+
+For a publication in progress, in `book.bib` file:
+
+```bibtex
+@book{wickham-unpub,
+  title={R Packages},
+  author={Wickham, Hadley and Bryan, Jenny},
+  url={https://r-pkgs.org},
+  edition = {2nd},
+  pubstate={in progress}
+}
 ```
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+where `pubstate` is a BibLaTeX field. 
 
 
-## Testing Travis-CI Build
-```{r}
-library(tidycensus)
-library(dplyr)
+`@wickham-unpub` = @wickham-unpub
 
-us_county_income <- get_acs(geography = "county", variables = "B19013_001", 
-                            shift_geo = TRUE, geometry = TRUE, key = Sys.getenv("CENSUS_API_KEY"))
+`-@wickham-unpub` = -@wickham-unpub
 
-us_county_income %>% 
-  head()
-```
+
+# Using the `renv` package 
+
+
+
 
 
