@@ -4,6 +4,8 @@ Title: Bookdown Test
 Version: 0.0.1
 Imports: 
     bookdown, 
-    ggplot2
+    ggplot2, 
+    renv
 Remotes: 
-    rstudio/bookdown
+    rstudio/bookdown,
+    rstudio/renv
